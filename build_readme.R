@@ -20,15 +20,20 @@ cat("To build this README, run `build_readme.R`. Talks data is in csv `talks_tab
 
 
 cat("## Workshops\n\n")
-cat("To follow shortly\n\n")
-# data %>%
-#   filter(Type == 'workshop') %>%
-#   glue_data(
-#     "<strong>{Name}</strong> (<i>{Affiliation}</i>), {Title}",
-#     "<details><summary>Abstract</summary>",
-#     "</p>{Abstract}</p><br>[Link to Workshop Material]({Slides})",
-#     "</details><br>"
-#   )
+data %>%
+  filter(Type == 'workshop') %>%
+  rowwise() %>%
+  mutate(txt = paste0(paste0("<strong>", unlist(strsplit(Name, " // ")), "</strong> (<i>", unlist(strsplit(Affiliation, " // ")), "</i>)"), collapse = ", ")) %>%
+  mutate(video_link = if_else(nchar(youtube) > 0, paste0("<span style=\"margin-left: 50px;\">[Workshop Recording](", youtube, ")</span>"), "")) %>%
+  glue_data(
+    "{txt}<br>{Title}",
+    "<details><summary>Abstract</summary>",
+    "</p>{Abstract}</p>",
+    "</details>",
+    "<span>[Link to Workshop Material]({Slides})</span>",
+    "{video_link}",
+    "<br><br>"
+  )
 
 x <- lapply(1:3, function(i) {
   data %>%
