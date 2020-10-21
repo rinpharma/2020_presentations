@@ -24,13 +24,13 @@ data %>%
   filter(Type == 'workshop') %>%
   rowwise() %>%
   mutate(txt = paste0(paste0("<strong>", unlist(strsplit(Name, " // ")), "</strong> (<i>", unlist(strsplit(Affiliation, " // ")), "</i>)"), collapse = ", ")) %>%
-  mutate(video_link = if_else(nchar(youtube) > 0, paste0("<span style=\"margin-left: 50px;\">[Workshop Recording](", youtube, ")</span>"), "")) %>%
+  mutate(video_link = if_else(nchar(youtube) > 0, paste0("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Workshop Recording](", youtube, ")"), "")) %>%
   glue_data(
     "{txt}<br>{Title}",
     "<details><summary>Abstract</summary>",
     "</p>{Abstract}</p>",
     "</details>",
-    "<span>[Link to Workshop Material]({Slides})</span>",
+    "[Link to Workshop Material]({Slides})",
     "{video_link}",
     "<br><br>"
   )
