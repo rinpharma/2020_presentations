@@ -4,8 +4,72 @@ To build this README, run `build_readme.R`. Talks data is in csv `talks_table.cs
 
 ## Workshops
 
-To follow shortly
+<strong>Leon Eyrich Jessen</strong> (<i>Technical University of Denmark</i>)<br>Artificial Neural Networks in R with Keras and TensorFlow<details><summary>Abstract</summary></p>This workshop is introductory and open to everyone assuming basic R/Data Science skills. Please note, the workshop is very hands-on oriented, so expect to get your fingers dirty! The aim will be an introduction to ANNs in R. ANNs form the basic unit of deep learning and are immensely powerful in predictive modelling, but not without pitfalls. In this workshop, we will be working with conceptually understanding what an ANN is, how we train an ANN and how predictions are subsequently made. We will also touch upon parameters, hyper-parameters and how to handle data all in context of model over-fitting. All of the aforementioned will be done using TensorFlow via Keras for R.</p></details>[Link to Workshop Material](https://github.com/leonjessen/RPharma2020)<br><br>
+<strong>Mike Stackhouse</strong> (<i>Atorus</i>), <strong>Nathan Kosiba</strong> (<i>Atorus</i>)<br>Multilingual Markdown with R and Python Using Reticulate<details><summary>Abstract</summary></p>We will be presenting an overview of the interoperability between Python and R for the R user community at R/Pharma 2020. This workshop will highlight how statistical programmers can leverage the power of both R and Python in their daily processes. Participants will get hands on experience working with some of the best aspects of both R and Python, and how these two languages can work together within R Markdown.</p></details>[Link to Workshop Material](https://github.com/atorus-research/MultilingualMarkdown)<br><br>
+<strong>Stefano Mangiola</strong> (<i>Walter and Eliza Hall of Medical Research</i>), <strong>Maria Doyle</strong> (<i>Peter MacCallum Cancer Center</i>)<br>Tidy Transcriptomics<details><summary>Abstract</summary></p>In this workshop we will present how to perform analysis of RNA sequencing data following the tidy data paradigm. The tidy data paradigm provides a standard way to organise data values within a dataset, where each variable is a column, each observation is a row, and data is manipulated using an easy-to-understand vocabulary. Most importantly, the data structure remains consistent across manipulation and analysis functions. We can achieve this for bulk RNA sequencing data with the tidybulk, tidyHeatmap and tidyverse packages. We will also touch on packages for tidy single-cell transcriptional analyses. These packages are part of the tidytranscriptomics suite that introduces a tidy approach to RNA sequencing data.
 
+Recommended pre-requisites
+
+-  Basic knowledge of RStudio
+-  Some familiarity with tidyverse syntax
+-  Background Reading Introduction to R for Biologists</p></details>[Link to Workshop Material](https://github.com/stemangiola/rpharma2020_tidytranscriptomics/)<br><br>
+<strong>Andy Nicholls</strong> (<i>Glaxosmithkline</i>), <strong>Marly Gotti</strong> (<i>Biogen</i>)<br>Implementing a Risk-based Approach to R Validation<details><summary>Abstract</summary></p>In this workshop we will walk through an implementation of the R Validation Hub's white paper: A Risk-based Approach for Assessing R Package Accuracy within a Validated Infrastructure (https://www.pharmar.org/white-paper/). The workshop will explore two core themes:
+
+1. R Packages Risk Assessment
+
+2. Testing
+
+In part 1, we will use a small set of pre-selected R packages to see how the R Validation Hub's Risk Assessment Application and the riskmetric R package can be used to create risk assessment reports for an R package.
+
+In part 2, we will discuss how testing can be used to reduce the risk for those packages with high risk. In particular, we will discuss the testing philosphy with respect to software validation and demonstrate how the 'testthat' package can be used to perform the necessary steps to test traceability requirements.
+
+Prior knowledge of the basic structure of R packages is required for the second part of this workshop.</p></details>[Link to Workshop Material](https://pharmar.github.io/rpharma2020/)<br><br>
+<strong>Alison Hill</strong> (<i>RStudio</i>), <strong>Tom Mock</strong> (<i>RStudio</i>)<br>RMarkdown<details><summary>Abstract</summary></p>A four-hour workshop that will take you on a tour of how to get from data to manuscript using R Markdown. You'll learn:
+
+-  The basics of Markdown and knitr
+-  How to add tables for different outputs
+-  Workflows for working with data
+-  How to include and style graphics</p></details>[Link to Workshop Material](https://rmd4pharma.netlify.app/)<br><br>
+<strong>Daniel Lee</strong> (<i>Generable</i>)<br>Stan<details><summary>Abstract</summary></p>This is a 3-hour workshop on Stan (https://mc-stan.org). The overall goal of the workshop will be to make the best use of time to answer as many Stan-related questions as possible. The level of the workshop will be intermediate to advanced, but anyone is welcome to join.
+
+The workshop will be taught by Daniel Lee. Daniel is one of the original Stan developers (started in 2011). He's been involved in the whole stack: language, CmdStan, RStan, PyStan, continuous integration, setting up the forums, StanCon, and more. He's had a lot of experience with debugging computational issues, the crossover between statistical models and computational, understanding how all the pieces fit in together, and knowing a lot of different ways to accomplish the same thing in the Stan language.
+
+The format of this workshop won't be a straight online lecture. I'm personally tired of Zoom meetings; I don't think the intro course I teach works in this format. Instead, we'll have a blend of an instructor-led example, a masterclass, and an AMA. Please come with questions or ask them as we go along. Here's a rough plan (but we can deviate from this):
+
+1. Brief introduction to Stan. Goal: understand what Stan is, what the inferences are (and why they're different), and agree on terminology.
+
+2. Walkthrough an example (survival or PK/PD model). Show differences between posterior distributions and point estimates. Maybe discuss quality of MCMC sampling.
+
+3. One-on-one with a participant. Walk through their problem, attempt at a solution, walk through the different modeling choices we're making, how to structure simulated data, etc.
+
+4. One-on-one with another participant.
+
+5. Questions / Wrap up.</p></details>[Link to Workshop Material]()<br><br>
+<strong>Will Landau</strong> (<i>Eli Lilly</i>)<br>targets / Reproducible Pipelines<details><summary>Abstract</summary></p>Data science can be slow. A single round of statistical computation can take several minutes, hours, or even days to complete. The targets R package keeps results up to date and reproducible while minimizing the number of expensive tasks that actually run. Targets learns how your pipeline fits together, skips costly runtime for steps that are already up to date, runs the rest with optional implicit parallel computing, abstracts files as R objects, and shows tangible evidence that the output matches the underlying code and data. In other words, the package saves time while increasing our ability to trust the conclusions of the research. Targets surpasses the most burdensome permanent limitations of its predecessor, drake, to achieve greater efficiency and provide a safer, smoother, friendlier user experience. This hands-on workshop teaches targets using a realistic case study. Participants begin with the R implementation of a machine learning project, convert the workflow into a targets-powered pipeline, and efficiently maintain the output as the code and data change.
+
+R proficiency: intermediate and above required.</p></details>[Link to Workshop Material](https://wlandau.github.io/rpharma2020/)<br><br>
+<strong>Rich Iannone</strong> (<i>RStudio</i>)<br>gt<details><summary>Abstract</summary></p></p></details>[Link to Workshop Material](https://github.com/rich-iannone/gt-workshop-2020)<br><br>
+<strong>David Granjon</strong> (<i>Novartis</i>), <strong>John Coene</strong> (<i>World Economic Forum</i>)<br>Unleash Shiny<details><summary>Abstract</summary></p>In recent years, R users' understanding of Shiny has greatly increased but so have client expectations. While one of Shiny's greatest strengths is that it allows producing web applications solely from R code, meeting client's more delicate expectations will often involve going beyond R code and work with HTML, CSS, and JavaScript.
+
+We recognize that R developers tend not to be familiar with the latter as they generally do not have significant background in web development, these may therefore appear daunting at first.
+
+This workshop aims to put attendees at ease with inviting those web technologies into their shiny applications so they can exceed client's expectations. The workshop will comprise three parts.
+
+Part 1 hones in on the development of a new template on top of Shiny with the {htmltools} package. Workshop attendees will have the opportunity to collaborate with the RinteRface team on the {shinybulma} project (https://github.com/RinteRface/shinybulma).
+
+Part 2 delves into bi-directional communication in Shiny: how the R server communicates with the front-end and vice versa, how the input/output system works.
+
+Part 3 ends the workshop by exposing all the less known functions/methods that are however likely to help you in your Shiny journey!
+
+Prerequisites for the workshop:
+
+-  Be proficient with Shiny
+-  Basic knowledge about R6
+-  Be proficient with package development
+-  JavaScript/CSS skills may help but are not mandatory
+</p></details>[Link to Workshop Material]()<br><br>
+<strong>Devin Pastoor</strong> (<i>Metrum Research Group</i>), <strong>Kyle Baron</strong> (<i>Metrum Research Group</i>)<br>A PK & PBPK Modelling Workflow in R: Simulation, Optimization & Visualization<details><summary>Abstract</summary></p>After a brief introduction to mrgsolve (https://mrgsolve.github.io), we will discuss concepts and applications for using the package in R to simulate from pharmacokinetic (PK) and physiologically-based PK (PBPK) models, estimate parameters given a model and data, and visualize simulation results with a Shiny app. We will establish a basic framework for running optimization in R and work hands-on examples using different optimizers, including local and global search algorithms. Building on this framework, we will also illustrate related workflows including global and local sensitivity analysis. Finally, we will develop and deploy a Shiny app using Rstudio Connect, allowing interaction with the model and optimization results by non-modeling stakeholders.</p></details>[Link to Workshop Material](https://github.com/metrumresearchgroup/r-pharma-pkpd-2020)<br><br>
+<strong>Emil Hvitfeldt</strong> (<i>University Southern California</i>)<br>Predictive modeling with text using tidy data principles<details><summary>Abstract</summary></p>Have you ever encountered text data and suspected there was useful insight latent within it but felt frustrated about how to find that insight? Are you familiar with dplyr and ggplot2, and ready to learn how unstructured text data can be used for prediction within the tidyverse and tidymodels ecosystems? Do you need a flexible framework for handling text data that allows you to engage in tasks from exploratory data analysis to supervised predictive modeling? This tutorial is geared toward an R user with intermediate familiarity with R, RStudio, the basics of regression and classification modeling, and tidyverse packages such as dplyr and ggplot2. This person is comfortable with the main functions from dplyr and ggplot2 and is now ready to learn how to analyze and model text using tidy data principles. This R user has some experience with statistical modeling (such as using lm() and glm()) for prediction and classification and wants to learn how to build models with text.</p></details>[Link to Workshop Material](https://textmodels4pharma.netlify.app/)<br><br>
 
 
 ## Talks - Day  1 
