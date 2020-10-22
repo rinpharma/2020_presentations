@@ -28,7 +28,7 @@ data %>%
   glue_data(
     "{txt}<br>{Title}",
     "<details><summary>Abstract</summary>",
-    "</p>{Abstract}</p>",
+    "<p>{Abstract}</p>",
     "</details>",
     "[Link to Workshop Material]({Slides})",
     "{video_link}",
